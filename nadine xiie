@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mario Bros</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --pink: #f7c6d9;
+            --blue: #cde8f6;
+            --yellow: #fff1b6;
+            --green: #d4f4dd;
+            --purple: #e6d9ff;
+            --dark: #444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, var(--blue), var(--yellow));
+            color: var(--dark);
+        }
+
+        header {
+            background: var(--pink);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 6px solid var(--purple);
+        }
+
+        header h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: var(--green);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: var(--purple);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: var(--pink);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 6px solid var(--purple);
+        }
+
+        button {
+            background: #ff6f61;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff3b2e;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍄 PORTOFOLIO NADINE! </h1>
+        <p>Aku Nadine! Kemampuan aku seputar bahasa, coding, dan banyak hal lainnya!!</p>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>👤 Tentang Saya</h2>
+            <p>
+                Halo! Saya adalah Nadine, siswa 17 tahun yang berada di kelas bidang ekonomi informatika. Selain itu, saya juga memiliki minat dalam mempelajari bahasa baru dan pekerjaan yang mengharuskan kerja tim. Saya sekolah di SMA Budi Luhur dan merupakan mantan anggota osis 23/24.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⭐ Skill</h2>
+            <div class="skills">
+                <div class="skill-box">Coding HTML</div>
+                <div class="skill-box">Organisasi</div>
+                <div class="skill-box">Bahasa Inggris</div>
+                <div class="skill-box">Accounting</div>
+                <div class="skill-box">Bahasa Jepang</div>
+                <div class="skill-box">MC</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🎮 Proyek</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Bisnis Digital</h3>
+                    <p>Bisnis yang mengharuskan terjun ke dunia digital.</p>
+                </div>
+                <div class="project">
+                    <h3>Poster Digital</h3>
+                    <p>Desain poster digital.</p>
+                </div>
+                <div class="project">
+                    <h3>Portofolio</h3>
+                    <p>Konsep portofolio sederhana bertema Mario.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📩 Kontak</h2>
+            <p>Email: blsma.23241105@budiluhur.sch.id</p>
+            <p>Instagram: @nadinenadine</p>
+            <br>
+            <button>Hubungi Saya</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Portofolio Nana</p>
+    </footer>
+
+</body>
+</html>
